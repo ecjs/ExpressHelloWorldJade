@@ -9,6 +9,10 @@ app.get("/", function(req, res) {
   res.render('index', { title: 'Node/Express/Jade Hello World!', message: 'Node/Express/Jade Hello World!', email: 'mark@mjharrell.com', twitter: 'mark_harrell'});
 });
 
+app.get("/surprise", function(req, res) {
+  res.render('surprise', { title: 'Node/Express/Jade/Static Hello World!', message: 'Surprise!', email: 'mark@mjharrell.com', twitter: 'mark_harrell'});
+});
+
 //start the server
 var server = app.listen(3000, function (req,res) {
   var listening = server.address().port;
