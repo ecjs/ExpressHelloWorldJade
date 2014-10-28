@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title!= title
+    // Bootstrap Core CSS
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='css/stylish-portfolio.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='font-awesome-4.1.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+  body
+    // Header
+    header#top.header
+      .text-vertical-center
+        h1!= message
+        h3 Just as simple as it sounds.  Thanks BootStrap!
+        br
+        a.btn.btn-dark.btn-lg(href='https://github.com/ecjs/ExpressHelloWorldJade.git') Fork Me!
+    // Footer
+    footer
+      .container
+        .row
+          .col-lg-10.col-lg-offset-1.text-center
+            h4
+              strong Get a hold of me:
+            ul.list-unstyled
+              li
+                i.fa.fa-envelope-o.fa-fw
+                a(href='mailto:' + email) Email
+            br
+            ul.list-inline
+              li
+                a(href='http://www.twitter.com/' + twitter)
+                  i.fa.fa-twitter.fa-fw.fa-3x
+
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
